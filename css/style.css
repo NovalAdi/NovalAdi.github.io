@@ -1,0 +1,234 @@
+* {
+    transition: all 400ms ease;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'kosannoncommercialregular';
+    src: url('fonts/kosan/kosannoncommercial-webfont.woff2') format('woff2'),
+         url('fonts/kosan/kosannoncommercial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #212121;
+}
+
+h1, h2, h3, h4, p, a {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary: rgb(248, 237, 15);
+    --color-neon-off : rgb(50, 50, 50);
+    --color-neon : rgb(255, 247, 105);
+}
+
+/* keyframes */
+@keyframes neon-name-border {
+    0% {
+        border: 1vw solid var(--color-neon-off);
+        -webkit-box-shadow: 0px 0px 28px 2px transparent;
+        -moz-box-shadow: 0px 0px 28px 2px transparent;
+        box-shadow: 0px 0px 28px 2px transparent;
+    }
+    10% {
+        border: 1vw solid var(--color-neon);
+        -webkit-box-shadow: 0px 0px 28px 2px var(--color-primary);
+        -moz-box-shadow: 0px 0px 28px 2px var(--color-primary);
+        box-shadow: 0px 0px 28px 2px var(--color-primary);
+    }
+    13% {
+        border: 1vw solid var(--color-neon-off);
+        -webkit-box-shadow: 0px 0px 28px 2px transparent;
+        -moz-box-shadow: 0px 0px 28px 2px transparent;
+        box-shadow: 0px 0px 28px 2px transparent;
+    }
+    17% {
+        border: 1vw solid var(--color-neon);
+        -webkit-box-shadow: 0px 0px 28px 2px var(--color-primary);
+        -moz-box-shadow: 0px 0px 28px 2px var(--color-primary);
+        box-shadow: 0px 0px 28px 2px var(--color-primary);
+    }
+    20% {
+        border: 1vw solid var(--color-neon-off);
+        -webkit-box-shadow: 0px 0px 28px 2px transparent;
+        -moz-box-shadow: 0px 0px 28px 2px transparent;
+        box-shadow: 0px 0px 28px 2px transparent;
+    }
+    21% {
+        border: 1vw solid var(--color-neon);
+        -webkit-box-shadow: 0px 0px 28px 2px var(--color-primary);
+        -moz-box-shadow: 0px 0px 28px 2px var(--color-primary);
+        box-shadow: 0px 0px 28px 2px var(--color-primary);
+    }
+    89% {
+        border: 1vw solid var(--color-neon);
+        -webkit-box-shadow: 0px 0px 28px 2px var(--color-primary);
+        -moz-box-shadow: 0px 0px 28px 2px var(--color-primary);
+        box-shadow: 0px 0px 28px 2px var(--color-primary);
+    }
+    90% {
+        border: 1vw solid var(--color-neon-off);
+        -webkit-box-shadow: 0px 0px 28px 2px transparent;
+        -moz-box-shadow: 0px 0px 28px 2px transparent;
+        box-shadow: 0px 0px 28px 2px transparent;
+    }
+    100% {
+        border: 1vw solid var(--color-neon-off);
+        -webkit-box-shadow: 0px 0px 28px 2px transparent;
+        -moz-box-shadow: 0px 0px 28px 2px transparent;
+        box-shadow: 0px 0px 28px 2px transparent;
+    }
+}
+
+@keyframes neon-name {
+    0% {
+        color: var(--color-neon-off);
+        text-shadow: 0px 0px 13px var(--color-neon-off);
+    }
+    10% {
+        color: var(--color-neon);
+        text-shadow: 0px 0px 13px var(--color-neon);
+    }
+    13% {
+        color: var(--color-neon-off);
+        text-shadow: 0px 0px 13px var(--color-neon-off);
+    }
+    17% {
+        color: var(--color-neon);
+        text-shadow: 0px 0px 13px var(--color-neon);
+    }
+    20% {
+        color: var(--color-neon-off);
+        text-shadow: 0px 0px 13px var(--color-neon-off);
+    }
+    21% {
+        color: var(--color-neon);
+        text-shadow: 0px 0px 13px var(--color-neon);
+    }
+    89% {
+        color: var(--color-neon);
+        text-shadow: 0px 0px 13px var(--color-neon);
+    }
+    90% {
+        color: var(--color-neon-off);
+        text-shadow: 0px 0px 13px var(--color-neon-off);
+    }
+    100% {
+        color: var(--color-neon-off);
+        text-shadow: 0px 0px 13px var(--color-neon-off);
+    }
+}
+/* end keyframes */
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(33, 33, 33, 0.4);
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 16px 0;
+}
+
+.logo {
+    margin-left: 50px;
+    font-size: 1.6rem;
+}
+
+.logo:hover {
+    text-shadow: 0px 0px 13px var(--color-primary);
+    transform: scale(1.2);
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-item a {
+    margin: 0 2vw;
+    color: white;
+}
+
+.nav-item:hover a {
+    color: var(--color-primary);
+}
+/* end nav */
+
+/* header */
+header {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header {
+    display: flex;
+    gap: 3vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.neon-name {
+    padding: 2.5vw;
+    background-color: transparent;
+    border-radius: 3vw;
+    animation: neon-name-border 8s infinite;
+}
+
+.neon-name h1 {
+    font-family: 'kosannoncommercialregular', Arial, sans-serif;
+    font-size: 10vw;
+    animation: neon-name 8s infinite;
+}
+
+.portfolio-text {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.portfolio-text p {
+    font-size: 3vw;
+    font-weight: bold;
+}
+/* end header */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* about */
+.container-about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    padding: 30px;
+}
+
+.container-about h1 {
+    font-family: 'kosannoncommercialregular', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+.container-about h1::after {
+    animation: neon-name 8s;
+}
