@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,15 +16,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <!-- nav -->
     <nav>
-        <a href=""><h1 class="logo">N</h1></a>
+        <a href="">
+            <h1 class="logo">N</h1>
+        </a>
         <ul class="nav-list">
             <li class="nav-item"><a href="#about">About</a></li>
             <li class="nav-item"><a href="#experience">Experience</a></li>
             <li class="nav-item"><a href="#projects">Projects</a></li>
             <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="toggle"><img src="img/menu.png" alt="menu" height="30px" width="30px"></li>
         </ul>
     </nav>
     <!-- end nav -->
@@ -57,7 +62,7 @@
         <section class="container-about">
             <div class="container-title-about">
                 <div class="line1"></div>
-                <p class="about-title">About</p>
+                <p class="title about-title">About</p>
                 <div class="line2"></div>
             </div>
             <div class="about-content">
@@ -66,7 +71,8 @@
                     <h1><b>Noval Adi Prasetya</b></h1>
                     <h2>-- Android Developer --</h2>
                     <p>
-                        I'm a vocational high school student who is confident in my ability to generate interesting ideas in 
+                        I'm a vocational high school student who is confident in my ability to generate interesting
+                        ideas in
                         application development. And also i highly motivated to upgrade my skills professionally.
                     </p>
                 </div>
@@ -82,7 +88,7 @@
         <section class="container-experience">
             <div class="container-title-experience">
                 <div class="line1"></div>
-                <p class="experience-title">Experience</p>
+                <p class="title experience-title">Experience</p>
                 <div class="line2"></div>
             </div>
 
@@ -92,11 +98,14 @@
                     <div class="container-text-exp-1">
                         <h1 class="experience-no-1"># 1</h1>
                         <h1>X-Tension (X RPL Teaching Mission)</h1>
-                        <p>This is an event where me and my friends went to Jogja and opened a bootcamp to teach about how to Become a Flutter Developer.</p>
+                        <p>This is an event where me and my friends went to Jogja and opened a bootcamp to teach about
+                            how to Become a Flutter Developer.</p>
                     </div>
                 </div>
-                <div class="experience-content-right-1">
-                    <img class="img-experience-1" src="img/ngajar-jogja.JPG" alt="">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div class="experience-content-right-1">
+                        <img class="img-experience-1" src="img/ngajar-jogja.JPG" alt="">
+                    </div>
                 </div>
             </div>
 
@@ -106,11 +115,14 @@
                     <div class="container-text-exp-2">
                         <h1 class="experience-no-2"># 2</h1>
                         <h1>Speaker in Al hazen's Talkshow at Muslim Life Fest</h1>
-                        <p>I was a speaker in Al hazen's talk show at Muslim Life Fest about How to be a Mobile Developer, which was attended by several teachers from islamic schools in Indonesia.</p>
+                        <p>I was a speaker in Al hazen's talk show at Muslim Life Fest about How to be a Mobile
+                            Developer, which was attended by several teachers from islamic schools in Indonesia.</p>
                     </div>
                 </div>
-                <div class="experience-content-left-2">
-                    <img class="img-experience-2" src="img/alhazen.png" alt="">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div class="experience-content-left-2">
+                        <img class="img-experience-2" src="img/alhazen.png" alt="">
+                    </div>
                 </div>
             </div>
 
@@ -118,18 +130,175 @@
         <!-- end experience -->
 
         <!-- project -->
-        <div id="projects" style="margin-bottom: 80px;"></div>
+        <div id="projects" style="margin-bottom: 120px;"></div>
         <section class="container-projects">
             <div class="container-title-projects">
                 <div class="line1"></div>
                 <p class="projects-title">Projects</p>
                 <div class="line2"></div>
             </div>
+            <div class="container-list-projects">
+                <div class="container-projects-left">
+                    <!-- projects 1 -->
+                    <div class="projects-left p-1">
+                        <h1 class="projects-no-left p-title-1"># 1</h1>
+                        <div class="projects-left-container p-content-1">
+                            <img class="img-projects" src="img/ToDo-App.png" alt="ToDo-App">
+                            <h1>ToDo List</h1>
+                            <p>I have created an application called "ToDo List" using the kotlin programming language.</p>
+                            <p><b>Tools</b> : viewBinding, dataBinding, enum class for indicator, roomDAO, safeArgs, recyclerView</p>
+                            <div class="container-logo-left">
+                                <img src="img/android.png" alt="android">
+                                <img src="img/figma.png" alt="figma">
+                                <img src="img/kotlin.png" alt="kotlin">
+                            </div>
+                            <a href="https://github.com/NovalAdi/NoteApp.git" target="_blank"><div class="button-git">&larr; code</div></a>
+                        </div>
+                    </div>
+
+                    <!-- invis projects 2 -->
+                    <div class="projects-left p-2" style="visibility: hidden;">
+                        <h1 class="projects-no-left p-title-2"># 2</h1>
+                        <div class="projects-left-container p-content-2">
+                            <img class="img-projects" src="img/Kisah-25-nabi-dan-rasul.png" alt="ToDo-App">
+                            <h1>Kisah 25 Nabi dan Rasul</h1>
+                            <p>This application displays all the prophets of Islam complete with biographies. And i make this using API</p>
+                            <p><b>Tools</b> : retrofit to deal with API, tabLayout, Parcelable, viewBinding, recyclerView</p>
+                            <div class="container-logo-left">
+                                <img src="img/android.png" alt="android">
+                                <img src="img/figma.png" alt="figma">
+                                <img src="img/kotlin.png" alt="kotlin">
+                            </div>
+                            <a href="https://github.com/NovalAdi/KisahNabi.git" target="_blank"><div class="button-git">&larr; code</div></a>
+                        </div>
+                    </div>
+
+                    <!-- projects 3 -->
+                    <div class="projects-left p-3">
+                        <h1 class="projects-no-left p-title-3"># 3</h1>
+                        <div class="projects-left-container p-content-3">
+                            <img class="img-projects" src="img/Sunnah-rasul.png" alt="ToDo-App">
+                            <h1>Sunnah Rasul</h1>
+                            <p>This application helps you to do the sunnah in your daily activities</p>
+                            <p><b>Tools</b> : firebase, retrofit to deal with API, tabLayout, Parcelable, viewBinding, recyclerView</p>
+                            <div class="container-logo-left">
+                                <img src="img/android.png" alt="android">
+                                <img src="img/figma.png" alt="figma">
+                                <img src="img/kotlin.png" alt="kotlin">
+                            </div>
+                            <a href="https://github.com/NovalAdi/SunnahRasul.git" target="_blank"><div class="button-git">&larr; code</div></a>
+                        </div>
+                    </div>
+
+                    <!-- invis projects 4 -->
+                    <div class="projects-left p-4" style="visibility: hidden;">
+                        <h1 class="projects-no-left p-title-4"># 4</h1>
+                        <div class="projects-left-container p-content-4">
+                            <img class="img-projects" src="img/Kisah-25-nabi-dan-rasul.png" alt="ToDo-App">
+                            <h1>MamakuSuka</h1>
+                            <p>This app display a recipe catalogue complete with a simple step to make your nice meal</p>
+                            <p><b>Tools</b> : Carousel slider, stateful widget, Basic Widget</p>
+                            <div class="container-logo-left">
+                                <img src="img/flutter.png" alt="flutter">
+                                <img src="img/figma.png" alt="figma">
+                                <img src="img/dart.png" alt="dart">
+                            </div>
+                            <a href="https://github.com/NovalAdi/mamakusuka.git" target="_blank"><div class="button-git">&larr; code</div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-container">
+                    <div class="line-absolute">
+                        <div class="line-cover">
+                            <div class="circle"></div>
+                            <div class="block"></div>
+                        </div>
+                    </div>
+                    <div class="line-projects"></div>
+                </div>
+                <div class="container-projects-right">
+                    <!-- invis projects 1 -->
+                    <div class="projects-right p-right-1 invis">
+                        <h1 class="projects-no-right p-title-right-1"># 1</h1>
+                        <div class="projects-right-container p-content-right-1">
+                            <img class="img-projects" src="img/ToDo-App.png" alt="ToDo-App">
+                            <h1>ToDo List</h1>
+                            <p>I have created an application called "ToDo List" using the kotlin programming language.</p>
+                            <p><b>Tools</b> : viewBinding, dataBinding, enum class for indicator, roomDAO, safeArgs, recyclerView</p>
+                            <div class="container-logo-right">
+                                <img src="img/android.png" alt="android">
+                                <img src="img/figma.png" alt="figma">
+                                <img src="img/kotlin.png" alt="kotlin">
+                            </div>
+                            <a href="https://github.com/NovalAdi/NoteApp.git" target="_blank"><div class="button-git">&larr; code</div></a>
+                        </div>
+                    </div>
+
+                    <!-- projects 2 -->
+                    <div class="projects-right p-right-2">
+                        <h1 class="projects-no-right p-title-right-2"># 2</h1>
+                        <div class="projects-right-container p-content-right-2">
+                            <img class="img-projects" src="img/Kisah-25-nabi-dan-rasul.png" alt="ToDo-App">
+                            <h1>Kisah 25 Nabi dan Rasul</h1>
+                            <p>This application displays all the prophets of Islam complete with biographies. And i make this using API</p>
+                            <p><b>Tools</b> : retrofit to deal with API, tabLayout, Parcelable, viewBinding, recyclerView</p>
+                            <div class="container-logo-right">
+                                <img src="img/android.png" alt="android">
+                                <img src="img/figma.png" alt="figma">
+                                <img src="img/kotlin.png" alt="kotlin">
+                            </div>
+                            <a href="https://github.com/NovalAdi/KisahNabi.git" target="_blank"><div class="button-git">&larr; code</div></a>
+                        </div>
+                    </div>
+
+                    <!-- invis projects 3 -->
+                    <div class="projects-right p-right-3 invis">
+                        <h1 class="projects-no-left p-title-right-3"># 3</h1>
+                        <div class="projects-left-container p-content-right-3">
+                            <img class="img-projects" src="img/Sunnah-rasul.png" alt="ToDo-App">
+                            <h1>Sunnah Rasul</h1>
+                            <p>This application helps you to do the sunnah in your daily activities</p>
+                            <p><b>Tools</b> : firebase, retrofit to deal with API, tabLayout, Parcelable, viewBinding, recyclerView</p>
+                            <div class="container-logo-left">
+                                <img src="img/android.png" alt="android">
+                                <img src="img/figma.png" alt="figma">
+                                <img src="img/kotlin.png" alt="kotlin">
+                            </div>
+                            <a href="https://github.com/NovalAdi/SunnahRasul.git" target="_blank"><div class="button-git">&larr; code</div></a>
+                        </div>
+                    </div>
+
+                    <!-- projects 4 -->
+                    <div class="projects-right p-right-4">
+                        <h1 class="projects-no-right p-title-right-4"># 4</h1>
+                        <div class="projects-right-container p-content-right-4">
+                            <img class="img-projects" src="img/Dribbble-Mamakusuka.png" alt="ToDo-App">
+                            <h1>MamakuSuka</h1>
+                            <p>This app display a recipe catalogue complete with a simple step to make your nice meal</p>
+                            <p><b>Tools</b> : Carousel slider, stateful widget, Basic Widget</p>
+                            <div class="container-logo-right">
+                                <img src="img/flutter.png" alt="flutter">
+                                <img src="img/figma.png" alt="figma">
+                                <img src="img/dart.png" alt="dart">
+                            </div>
+                            <a href="https://github.com/NovalAdi/mamakusuka.git" target="_blank"><div class="button-git">&larr; code</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- end project -->
+
+        <!-- contact -->
+        <div id="contact" style="margin-bottom: 120px;"></div>
+        <section class="container-contact">
+            <div class="line"></div>
+        </section>
+        <!-- end contact -->
     </main>
 
     <script src="js/mian.js"></script>
 
 </body>
+
 </html>
