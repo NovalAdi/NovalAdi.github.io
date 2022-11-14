@@ -284,10 +284,6 @@ li {
     align-items: center;
 }
 
-.toggle {
-    display: none;
-}
-
 .nav-list {
     display: flex;
     align-items: center;
