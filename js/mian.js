@@ -50,8 +50,8 @@ observer_experience_title.observe(document.querySelector('.container-title-exper
 //experience 1
 const observer_experience_1 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        const img_experience = entry.target.querySelector('.img-experience-1');
-        const experience_no_1 = entry.target.querySelector('.experience-no-1');
+        const img_experience = entry.target.querySelector('.img-ex-1');
+        const experience_no_1 = entry.target.querySelector('.ex-no-1');
 
         if (entry.isIntersecting) {
             experience_no_1.classList.add('title-animation');
@@ -66,13 +66,13 @@ const observer_experience_1 = new IntersectionObserver(entries => {
         //img_border.classList.remove('border-img-animation');
     });
 });
-observer_experience_1.observe(document.querySelector('.experience-1'));
+observer_experience_1.observe(document.querySelector('.ex-1'));
 
 //experience 2
 const observer_experience_2 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        const img_experience = entry.target.querySelector('.img-experience-2');
-        const experience_no_2 = entry.target.querySelector('.experience-no-2');
+        const img_experience = entry.target.querySelector('.img-ex-2');
+        const experience_no_2 = entry.target.querySelector('.ex-no-2');
 
         if (entry.isIntersecting) {
             experience_no_2.classList.add('title-animation');
@@ -87,7 +87,28 @@ const observer_experience_2 = new IntersectionObserver(entries => {
         //img_border.classList.remove('border-img-animation');
     });
 });
-observer_experience_2.observe(document.querySelector('.experience-2'));
+observer_experience_2.observe(document.querySelector('.ex-2'));
+
+//experience 3
+const observer_experience_3 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const img_experience = entry.target.querySelector('.img-ex-3');
+        const experience_no_2 = entry.target.querySelector('.ex-no-3');
+
+        if (entry.isIntersecting) {
+            experience_no_2.classList.add('title-animation');
+            img_experience.classList.add('border-img-animation');
+            // img_border.classList.add('border-img-animation');
+            return; // if we added the class, exit the function
+        }
+
+        // We're not intersecting, so remove the class!
+        experience_no_2.classList.remove('title-animation');
+        img_experience.classList.remove('border-img-animation');
+        //img_border.classList.remove('border-img-animation');
+    });
+});
+observer_experience_3.observe(document.querySelector('.ex-3'));
 
 //projects title
 const observer_projects_title = new IntersectionObserver(entries => {
