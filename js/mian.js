@@ -238,3 +238,22 @@ const observer_projects_right_4 = new IntersectionObserver(entries => {
     });
 });
 observer_projects_right_4.observe(document.querySelector('.p-right-4'));
+
+//line
+const line = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const line = entry.target.querySelector('.line');
+
+        if (entry.isIntersecting) {
+            line.classList.add('line-animation');
+            // img_border.classList.add('border-img-animation');
+            return; // if we added the class, exit the function
+        }
+
+        // We're not intersecting, so remove the class!
+        line.classList.remove('line-animation');
+        //img_border.classList.remove('border-img-animation');
+    });
+});
+
+line.observe(document.querySelector('.container-contact'));

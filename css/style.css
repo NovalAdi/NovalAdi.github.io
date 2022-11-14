@@ -785,8 +785,8 @@ main {
     border: 5px solid var(--color-neon);
     border-radius: 50%;
     -webkit-box-shadow: 0px 0px 28px 2px var(--color-neon);
-        -moz-box-shadow: 0px 0px 28px 2px var(--color-neon);
-        box-shadow: 0px 0px 28px 2px var(--color-neon);
+    -moz-box-shadow: 0px 0px 28px 2px var(--color-neon);
+    box-shadow: 0px 0px 28px 2px var(--color-neon);
 }
 
 .block {
@@ -804,6 +804,7 @@ main {
         visibility: visible;
     }
 }
+
 /* end projects */
 
 .line {
@@ -812,13 +813,56 @@ main {
     border-radius: 3px;
 }
 
+/* contact */
 .container-contact {
     display: flex;
     flex-direction: column;
     width: 90%;
     gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-logo a {
+    margin: 0 20px;
+}
+
+.container-logo i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    border: 3px solid var(--bg-color);
+    border-radius: 50%;
+    color: var(--color-neon-off);
+    background-color: var(--color-neon);
+    height: 70px;
+    width: 70px;
+    font-size: 2rem;
+}
+
+.container-logo i:hover {
+    border: 3px solid var(--color-neon);
+    background-color: var(--bg-color);
+    color: var(--color-neon);
+    -webkit-box-shadow: 0px 0px 28px 2px var(--color-neon);
+    -moz-box-shadow: 0px 0px 28px 2px var(--color-neon);
+    box-shadow: 0px 0px 28px 2px var(--color-neon);
+}
+
+/* end contact */
+
+/* footer */
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+/* end footer */
 
 /* extra media */
 @media (max-width:500px) {
