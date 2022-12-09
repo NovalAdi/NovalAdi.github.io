@@ -278,3 +278,13 @@ const line = new IntersectionObserver(entries => {
 });
 
 line.observe(document.querySelector('.container-contact'));
+
+// Navbar Toggle Button
+const toggleButton = document.getElementsByClassName("toggle")[0];
+const navbarItem = document.getElementsByClassName("navbar-item");
+toggleButton.addEventListener("click", function () {
+  // transition navbar item
+  for (let i = 0; i < navbarItem.length; i++) {
+    navbarItem[i].classList.toggle("active");
+  }
+});
